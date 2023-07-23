@@ -8,7 +8,16 @@ sudo apt install neovim \
 ```
 >Check verison! Should be >= 0.7.0
 
-OR build from source code *(Prefered)* 
+Mac:
+```bash
+brew install ninja cmake gettext curl
+```
+
+
+OR build from source code *(Prefered)*
+
+
+Linux:
 ```bash
 sudo apt install git ninja-build gettext cmake unzip curl \
 -y
@@ -29,11 +38,17 @@ sudo make install
 ```
 2. ### Install pyright
 
-
+Linux:
 ```bash
 # Prefered
-sudo apt install npm -y && sudo npm install -g pyright
+sudo apt install node -y && sudo npm install -g pyright
 ```
+
+Mac:
+```bash
+brew install node && sudo npm install -g pyright
+```
+
 OR
 ```bash
 pip3 install pyright

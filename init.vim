@@ -50,9 +50,19 @@ call plug#end()
 " Turn on vim-sneak
 let g:sneak#label = 1
 
+" Set relative number
+set relativenumber
+set rnu
+
 " Set colorscheme
+
+let g:everforest_background = 'soft'
+" For better performance
+let g:everforest_better_performance = 1
+
 set background=dark
 colorscheme everforest
+set notermguicolors
 
 " turn off search highlight
 nnoremap ,<space> :nohlsearch<CR>
@@ -281,7 +291,7 @@ require("autoclose").setup(
 EOF
 
 " White colors for LSP messages in code
-set termguicolors
+" set termguicolors
 hi DiagnosticError guifg=White
 hi DiagnosticWarn  guifg=White
 hi DiagnosticInfo  guifg=White
